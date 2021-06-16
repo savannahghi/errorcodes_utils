@@ -1,11 +1,11 @@
-# Converters and Formatters
-`errorcodes_utils` is a utils package that has constants that define different types of errors 
+# Error Code Util
+`errorcodeutil` is a utils package that has constants that define different types of errors 
 
 ### Installing it
-errorcodes_utils is compatible with modern Go releases in module mode, with Go installed:
+errorcodeutil is compatible with modern Go releases in module mode, with Go installed:
 
 ```bash
-go get -u github.com/savannahghi/errorcodes_utils
+go get -u github.com/savannahghi/errorcodeutil
 
 ```
 will resolve and add the package to the current development module.
@@ -13,12 +13,12 @@ will resolve and add the package to the current development module.
 Alternatively the same can be achieved if you use import in a package:
 
 ```go
-import "github.com/savannahghi/errorcodes_utils"
+import "github.com/savannahghi/errorcodeutil"
 
 ```
 and run `go get` without parameters.
 
-The package name is `errorcodes_utils`
+The package name is `errorcodeutil`
 
 
 ### Developing
@@ -40,7 +40,7 @@ straightforward. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
 
 ## Versioning ##
 
-In general, errorcodes_utils follows [semver](https://semver.org/) as closely as we
+In general, errorcodeutil follows [semver](https://semver.org/) as closely as we
 can for tagging releases of the package. For self-contained libraries, the
 application of semantic versioning is relatively straightforward and generally
 understood. We've adopted the following

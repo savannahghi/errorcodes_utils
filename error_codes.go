@@ -1,4 +1,4 @@
-package go_utils
+package errorcodeutil
 
 // ErrorCode are  used to determine the nature of an error, and why it occurred
 // both the frontend and backend should be aware of these codes
