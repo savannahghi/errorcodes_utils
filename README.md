@@ -1,4 +1,4 @@
-# Converters and Formatters
+# Error Codes Utils
 `errorcodes_utils` is a utils package that has constants that define different types of errors 
 
 ### Installing it
