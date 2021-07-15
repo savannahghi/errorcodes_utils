@@ -293,4 +293,9 @@ const (
 	//the type of HasSladeCard variable is of another type other than bool
 	//Its error code is 58
 	HasSladeCard
+
+	//NavigationActionsError means that
+	//the system is not able to update or retrive a users navigation actions
+	//Its error code is 59
+	NavigationActionsError
 )
