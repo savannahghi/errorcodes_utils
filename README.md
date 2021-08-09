@@ -1,3 +1,5 @@
+![Linting and Tests](https://github.com/savannahghi/errorcodeutil/actions/workflows/ci.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/savannahghi/errorcodeutil/badge.svg?branch=main)](https://coveralls.io/github/savannahghi/errorcodeutil?branch=main)
 # Error Code Util
 `errorcodeutil` is a utils package that has constants that define different types of errors 
 
