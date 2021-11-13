@@ -298,4 +298,16 @@ const (
 	//the system is not able to update or retrive a users navigation actions
 	//Its error code is 59
 	NavigationActionsError
+
+	// GetInviteLinkError means that the system is unable to get a user's invite link'
+	// Its error code is 60
+	GetInviteLinkError
+
+	// SendInviteSMSError means that the system is unable to send an invite SMS' to a user'
+	// Its error code is 61
+	SendInviteSMSError
+
+	// GenerateTempPINError means that the system is unable to generate a temporary PIN'
+	// Its error code is 62
+	GenerateTempPINError
 )
