@@ -300,14 +300,17 @@ const (
 	NavigationActionsError
 
 	// GetInviteLinkError means that the system is unable to get a user's invite link'
+	// the flavour passed when generating the invite link is invalid
 	// Its error code is 60
 	GetInviteLinkError
 
 	// SendInviteSMSError means that the system is unable to send an invite SMS' to a user'
+	// the system failed to make a successful request to the messaging service
 	// Its error code is 61
 	SendInviteSMSError
 
 	// GenerateTempPINError means that the system is unable to generate a temporary PIN'
+	// the random number generator has failed (which is highly unlikely)
 	// Its error code is 62
 	GenerateTempPINError
 )
