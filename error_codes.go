@@ -313,4 +313,9 @@ const (
 	// the random number generator has failed (which is highly unlikely)
 	// Its error code is 62
 	GenerateTempPINError
+
+	//HasNoHistoricalClaimsError means that a lapsed cover does not have any historical claims.
+	// this is typically true when the beneficiary has not utilized their cover in any way
+	//Its error code is 63
+	HasNoHistoricalClaimsError
 )
