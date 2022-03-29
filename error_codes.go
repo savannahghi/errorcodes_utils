@@ -97,225 +97,225 @@ const (
 
 	// RecordNotFound means that the provided record is not found.
 	// This may happen when the provided data e.g currency, user etc is not accepted
-	// It's error code is 19
+	// It's error code is 18
 	RecordNotFound
 
 	// UnableToFindProvider means that the selected provider could not be found
 	// This may happen if the provider is not specified in the charge master
-	// It's error code is 20
+	// It's error code is 19
 	UnableToFindProvider
 
 	// PublishNudgeFailure means that there was an error while publishing a nudge
-	// It's error code is 21
+	// It's error code is 20
 	PublishNudgeFailure
 
 	// InvalidCredentials means that the provided credentials are invalid
 	// This may happen when any of the customers provides wrong credentials
-	// It's error code is 22
+	// It's error code is 21
 	InvalidCredentials
 
 	// AddNewRecordError means that the record could not be saved
 	// This may happen may be as a result of wrong credentials or biodata
-	// It's error code is 23
+	// It's error code is 22
 	AddNewRecordError
 
 	// InvalidSladeCode means that there is a problem with the provide slade code
 	// This may occur when the slade code in the EDI does not match with the chosen provider
-	// It's error code is 24
+	// It's error code is 23
 	InvalidSladeCode
 
 	// KYCAlreadySubmitted means that there is a problem while submitting KYC
 	// This may happen when the KYC has already been subnmitted
-	// Its error code is 25
+	// Its error code is 24
 	KYCAlreadySubmitted
 
 	// RoleNotValid means that the user role does not match the role required
 	// to perform the current operation that the user is trying to perform.
-	// Its error code is 26
+	// Its error code is 25
 	RoleNotValid
 
 	//InsuranceDetailsNotCoverLinked means that the user's insurance details are not
 	//coverLinked
-	//Its error code is 27
+	//Its error code is 26
 	InsuranceDetailsNotCoverLinked
 
 	//CoverAlreadyExists means that the user has tried to add an already existing cover
-	//Its error code is 28
+	//Its error code is 27
 	CoverAlreadyExists
 
 	//UserNotAuthorizedToAccessThisResource means that the subject's
 	//email has been found to not have access to the specified resource
-	//Its error code is 29
+	//Its error code is 28
 	UserNotAuthorizedToAccessThisResource
 
 	//NilEligibilityMember means that the eligibility lookup
 	//done on the Slade360 EDI returns a nil
-	//Its error code is 30
+	//Its error code is 29
 	NilEligibilityMember
 
 	//MinorMember means that
 	//a minor has tried to add their own cover
-	//Its error code is 31
+	//Its error code is 30
 	MinorMember
 
 	// NilPayerDetails means that
 	//the payer details have been found to be nil
-	//Its error code is 32
+	//Its error code is 31
 	NilPayerDetails
 
 	// FailedToLookUpEligibility means that
 	//there is a failed eligilibility lookup on the connected Slade 360EDI
 	//This lookup also includes dependants and allowed providers in the response payload
-	//Its error code is 33
+	//Its error code is 32
 	FailedToLookUpEligibility
 
 	//UnlinkedCover means that
 	//a subject's cover details have been found to not be linked
-	//Its error code is 34
+	//Its error code is 33
 	UnlinkedCover
 
 	//NoBeneficiaryWithMemberNumber means that
 	//no beneficiaryId is found under the given member number
-	//Its error code is 35
+	//Its error code is 34
 	NoBeneficiaryWithMemberNumber
 
 	//FailedToFetchDependants means that
 	//the dependants of a particular principal cannot be retrieved
-	//Its error code is 36
+	//Its error code is 35
 	FailedToFetchDependants
 
 	//InvalidCover means that
 	//the eligibilityStatus does not equal a valid cover
-	//Its error code is 37
+	//Its error code is 36
 	InvalidCover
 
 	//UnableToAddCover means that
 	//the cover has not been added
-	//Its error code is 38
+	//Its error code is 37
 	UnableToAddCover
 
 	//NotARecognizedDocumentType means that
 	//the document used is not a recognized identification document
-	//Its error code is 39
+	//Its error code is 38
 	NotARecognizedDocumentType
 
 	// FailedCreateMemberProfile means that
 	//when the request to create a new member profile fails
-	// Its error code is 40
+	// Its error code is 39
 	FailedCreateMemberProfile
 
 	//FailedCreateMemberProfileNotificationPayload is the  error message displayed
 	//when creation of a member profile notification payload fails
-	// Its error code is 41
+	// Its error code is 40
 	FailedCreateMemberProfileNotificationPayload
 
 	//UnableToFindUserBioData means that
 	//a subject's bio data cannot be found
-	//Its error code is 42
+	//Its error code is 41
 	UnableToFindUserBioData
 
 	//UnableToSaveMemberProfileRequest means that
 	//saving a member's profile request has failed
-	//Its error code is 43
+	//Its error code is 42
 	UnableToSaveMemberProfileRequest
 
 	//UnableToCheckIfUserIsAnAdmin means that
 	//checking to see if a user is an admin has failed
-	//Its error code is 44
+	//Its error code is 43
 	UnableToCheckIfUserIsAnAdmin
 
 	//LoggedInUserIsNotAnAdmin means that
 	//the user currently logged in has been found to not be an admin
-	//Its error code is 45
+	//Its error code is 44
 	LoggedInUserIsNotAnAdmin
 
 	//UnableToRetrieveMemberRequestNotifications means that
 	//retrieving member request notifications has failed
-	//Its error code is 46
+	//Its error code is 45
 	UnableToRetrieveMemberRequestNotifications
 
 	//UnableToMapMemberRequestNotification means that
 	//mapping the member request notification doc to object has failed
-	//Its error code is 47
+	//Its error code is 46
 	UnableToMapMemberRequestNotification
 
 	// UnableToRetrieveNotification means that
 	//retrieving a node from firestore fails with this ID
-	//Its error code is 48
+	//Its error code is 47
 	UnableToRetrieveNotification
 
 	//WrongNodeType means that
 	//a programming error has been made and a notification payload was expected
-	//Its error code is 49
+	//Its error code is 48
 	WrongNodeType
 
 	//NilNotificationPayloadNode means that
 	//a nil notification payload node is returned
-	//Its error code is 50
+	//Its error code is 49
 	NilNotificationPayloadNode
 
 	//UnableToSaveNotification means that
 	//saving a notification after updating it to read has failed
-	//Its error code is 51
+	//Its error code is 50
 	UnableToSaveNotification
 
 	//NoConfirmedPhoneNumbers means that
 	//a user's primary phone number is  nil
-	//Its error code is 52
+	//Its error code is 51
 	NoConfirmedPhoneNumbers
 
 	//InvalidPhoneNumberFormat means that
 	//the phone number format is invalid
-	//Its error code is 53
+	//Its error code is 52
 	InvalidPhoneNumberFormat
 
 	// UnableToSendText means that
 	//sending a text to the phone number in question has failed
-	//Its  error code is 54
+	//Its  error code is 53
 	UnableToSendText
 
 	//UnknownStateProvided means that
 	//an unknown state has been entered
-	//Its error code is 55
+	//Its error code is 54
 	UnknownStateProvided
 
 	//UnableToFetchProviderList means that
 	//fetching a provider list has failed
-	//Its error code is 56
+	//Its error code is 55
 	UnableToFetchProviderList
 
 	//ExpectedCardToBeTypeString means that
 	//the card is of another type apart from string
-	//Its error code is 57
+	//Its error code is 56
 	ExpectedCardToBeTypeString
 
 	//HasSladeCard means that
 	//the type of HasSladeCard variable is of another type other than bool
-	//Its error code is 58
+	//Its error code is 57
 	HasSladeCard
 
 	//NavigationActionsError means that
 	//the system is not able to update or retrive a users navigation actions
-	//Its error code is 59
+	//Its error code is 58
 	NavigationActionsError
 
 	// GetInviteLinkError means that the system is unable to get a user's invite link'
 	// the flavour passed when generating the invite link is invalid
-	// Its error code is 60
+	// Its error code is 59
 	GetInviteLinkError
 
 	// SendInviteSMSError means that the system is unable to send an invite SMS' to a user'
 	// the system failed to make a successful request to the messaging service
-	// Its error code is 61
+	// Its error code is 60
 	SendInviteSMSError
 
 	// GenerateTempPINError means that the system is unable to generate a temporary PIN'
 	// the random number generator has failed (which is highly unlikely)
-	// Its error code is 62
+	// Its error code is 61
 	GenerateTempPINError
 
 	//HasNoHistoricalClaimsError means that a lapsed cover does not have any historical claims.
 	// this is typically true when the beneficiary has not utilized their cover in any way
-	//Its error code is 63
+	//Its error code is 62
 	HasNoHistoricalClaimsError
 )
